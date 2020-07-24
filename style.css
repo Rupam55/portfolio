@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:700");
+@import url("https://fonts.googleapis.com/css?family=Abel");
+body {
+  background-color: #000000;
+  padding: 0;
+  margin: 0;
+  -webkit-transform: perspective(900px);
+  -webkit-transform-style: preserve-3d;
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* id */
+#particle_background {
+  width: 100%;
+}
+
+/* classes */
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-family: "Didact Gothic", sans-serif;
+  height: 10vh;
+}
+.mid_sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 90vh;
+}
+.out_card {
+  padding: 80px;
+}
+.card {
+  padding: 10px;
+  position: relative;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  margin: 0 auto;
+  border-radius: 4px;
+  z-index: 1;
+  transition: .5s;
+}
+
+.card .imgBx {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.5s;
+  z-index: 1;
+  text-align: center;
+}
+.card .imgBx img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  object-fit: scale-down;
+}
+.card .details {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 0vh;
+  transition: 0.5s;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+}
+.card:hover {
+  transform: translateX(50px);
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 1);
+  
+}
+.card:hover .imgBx {
+  transition: 0.5s;
+  bottom: 120px;
+}
+.card:hover .details {
+  transition: 0.5s;
+  height: 100px;
+}
+
+.button{
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+/*  */
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
