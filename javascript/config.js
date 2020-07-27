@@ -5,7 +5,7 @@ particlesJS('particle_background',
       "number": {
         "value": 100,
         "density": {
-          "enable": true,
+          "enable": false,
           "value_area": 800
         }
       },
@@ -28,7 +28,7 @@ particlesJS('particle_background',
         }
       },
       "opacity": {
-        "value": 1,
+        "value": 0.5,
         "random": false,
         "anim": {
           "enable": false,
@@ -38,11 +38,11 @@ particlesJS('particle_background',
         }
       },
       "size": {
-        "value": 5,
+        "value": 3,
         "random": true,
         "anim": {
           "enable": false,
-          "speed": 40,
+          "speed": 10,
           "size_min": 0.1,
           "sync": false
         }
@@ -56,7 +56,7 @@ particlesJS('particle_background',
       },
       "move": {
         "enable": true,
-        "speed": 6,
+        "speed": 1,
         "direction": "none",
         "random": false,
         "straight": false,
@@ -72,14 +72,14 @@ particlesJS('particle_background',
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": true,
+          "enable": false,
           "mode": "repulse"
         },
         "onclick": {
-          "enable": true,
+          "enable": false,
           "mode": "push"
         },
-        "resize": true
+        "resize": false
       },
       "modes": {
         "grab": {
@@ -106,7 +106,7 @@ particlesJS('particle_background',
         }
       }
     },
-    "retina_detect": true,
+    "retina_detect": false,
     "config_demo": {
       "hide_card": false,
       "background_color": "#b61924",
